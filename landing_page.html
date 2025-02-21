@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marvelous Portfolio - Landing Page</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Page-specific CSS -->
+  <link href="/styles/landing_page.css" rel="stylesheet" />
+</head>
+<body class="classic" id="portfolio-body">
+  <!-- Navigation Header -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="landing_page.html">My Portfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="project.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacts.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="certificate.html">Certificate</a></li>
+          <li class="nav-item">
+            <select class="form-select" id="styleSwitcher">
+              <option value="classic" selected>Classic</option>
+              <option value="advanced">Advanced</option>
+              <option value="fantastic">Fantastic</option>
+            </select>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="container py-5">
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="row align-items-center">
+        <!-- Left Column: Text Content -->
+        <div class="col-md-6 text-white p-5">
+          <h1 class="display-3 fw-bold name-heading">ANTHONY NDEGWA</h1>
+          <h2 class="display-5">Welcome to My Fantastic Portfolio</h2>
+          <p class="lead">
+            Explore a fusion of creativity and technology that brings your ideas to life.
+          </p>
+          <a href="#projects" class="btn btn-primary btn-lg mt-4">View Projects</a>
+        </div>
+        <!-- Right Column: Image -->
+        <div class="col-md-6 p-0">
+          <img src="images/IMG_20241214_095319.jpg" alt="Hero Image" class="img-fluid hero-image" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Brief About Section -->
+    <section id="about" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">About Me</h2>
+        <p class="text-center">
+          I'm a creative professional dedicated to crafting stunning digital experiences.
+          My passion for innovation drives every project I undertake.
+        </p>
+        <div class="text-center">
+          <a href="about.html" class="btn btn-outline-secondary">Learn More About Me</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Preview Section -->
+    <section id="projects" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-4">Featured Projects</h2>
+        <div class="row">
+          <!-- Project Preview 1 -->
+          <div class="col-md-4 mb-4">
+            <div class="card shadow-lg">
+              <img src="images/17-short-specializations-certificate-anthony-ndegwa.png" class="card-img-top" alt="Project One">
+              <div class="card-body">
+                <h5 class="card-title">Project One</h5>
+                <p class="card-text">
+                  An innovative solution blending design with functionality.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Project Preview 2 -->
+          <div class="col-md-4 mb-4">
+            <div class="card shadow-lg">
+              <img src="images/66-alx-aice-ai-career-essentials-certificate-anthony-ndegwa.png" class="card-img-top" alt="Project Two">
+              <div class="card-body">
+                <h5 class="card-title">Project Two</h5>
+                <p class="card-text">
+                  A creative project that highlights modern design trends.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Project Preview 3 -->
+          <div class="col-md-4 mb-4">
+            <div class="card shadow-lg">
+              <img src="images/Critical thinking and problem solving.jpg" class="card-img-top" alt="Project Three">
+              <div class="card-body">
+                <h5 class="card-title">Project Three</h5>
+                <p class="card-text">
+                  A dynamic project that showcases innovative digital solutions.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center">
+          <a href="project.html" class="btn btn-outline-primary">View All Projects</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call-to-Action Section -->
+    <section class="py-5 cta-section">
+      <div class="container text-center">
+        <h2 class="mb-4">Ready to Collaborate?</h2>
+        <p class="lead">Let's create something extraordinary together.</p>
+        <a href="contacts.html" class="btn btn-light btn-lg mt-3">Get in Touch</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer mt-auto py-3 bg-light">
+    <div class="container text-center">
+      <span class="text-muted">&copy; 2025 Anthony Ndegwa. All rights reserved.</span>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Style Switcher Script -->
+  <script>
+    const styleSwitcher = document.getElementById("styleSwitcher");
+    const body = document.getElementById("portfolio-body");
+    styleSwitcher.addEventListener("change", (e) => {
+      body.className = e.target.value;
+    });
+  </script>
+</body>
+</html>

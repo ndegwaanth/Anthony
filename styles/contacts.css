@@ -1,0 +1,15 @@
+/* Basic theme classes */
+.classic {
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+.advanced {
+  background: linear-gradient(135deg, #1d3557, #457b9d);
+  color: #f1faee;
+}
+
+.fantastic {
+  background: radial-gradient(circle, #ff9a9e, #fad0c4);
+  color: #2d3436;
+}

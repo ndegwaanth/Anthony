@@ -1,0 +1,46 @@
+/* Theme Classes */
+.classic {
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+.advanced {
+  background: linear-gradient(135deg, #1d3557, #457b9d);
+  color: #f1faee;
+}
+
+.fantastic {
+  background: radial-gradient(circle, #ff9a9e, #fad0c4);
+  color: #2d3436;
+}
+
+/* Hero Section Layout */
+.hero-section {
+  min-height: 90vh;
+}
+
+.hero-section .row {
+  min-height: 90vh;
+}
+
+/* Left Column: Name & Text Styling */
+.name-heading {
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  letter-spacing: 2px;
+}
+
+/* Right Column: Hero Image Styling */
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Rounded corners for a soft shape, not a perfect rectangle or circle */
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+/* Call-to-Action Section Styling */
+.cta-section {
+  background: linear-gradient(135deg, #1d3557, #457b9d);
+  color: #f1faee;
+}
