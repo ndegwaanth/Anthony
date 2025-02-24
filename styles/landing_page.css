@@ -1,7 +1,12 @@
 /* Theme Classes */
-.classic {
+/* .classic {
   background-color: #f8f9fa;
   color: #212529;
+} */
+
+.classic {
+  background: linear-gradient(135deg, #1d3557, #457b9d);
+  color: #f1faee;
 }
 
 .advanced {

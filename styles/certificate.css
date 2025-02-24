@@ -1,0 +1,43 @@
+/* Basic theme classes */
+/* .classic {
+  background-color: #f8f9fa;
+  color: #212529;
+} */
+
+.classic {
+  background: linear-gradient(135deg, #1d3557, #457b9d);
+  color: #f1faee;
+}
+
+.advanced {
+  background: linear-gradient(135deg, #1d3557, #457b9d);
+  color: #f1faee;
+}
+
+.fantastic {
+  background: radial-gradient(circle, #ff9a9e, #fad0c4);
+  color: #2d3436;
+}
+
+/* Certificate Section Specific Styles */
+.certificate-section {
+  padding: 2rem 0;
+}
+
+.certificate-card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.certificate-card:hover {
+  transform: translateY(-5px);
+}
+
+.certificate-card .card-img-top {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}

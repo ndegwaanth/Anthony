@@ -1,33 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Marvelous Portfolio</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="styles/certificate.css">
-  <style>
-    /* Style variations */
-    .classic { background-color: #f8f9fa; color: #212529; }
-    .advanced { background: linear-gradient(135deg, #1d3557, #457b9d); color: #f1faee; }
-    .fantastic { background: radial-gradient(circle, #ff9a9e, #fad0c4); color: #2d3436; }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marvelous Portfolio - Certificates</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Page-specific CSS -->
+  <link href="certificate.css" rel="stylesheet" />
 </head>
 <body class="classic" id="portfolio-body">
   <!-- Navigation Header -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
-      <!-- Link to the landing page -->
-      <a class="navbar-brand" href="landing_page.html">My Portfolio</a>
+      <a class="navbar-brand" href="landing_page.html">Anthony</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="project.html">Projects</a></li>
-          <li class="nav-item"><a class="nav-link" href="contacts.html">Contact</a></li>
-          <li class="nav-item"><a class="nav-link" href="certificate.html">Certificate</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="project.html">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacts.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="certificate.html">Certificates</a>
+          </li>
           <li class="nav-item">
             <select class="form-select" id="styleSwitcher">
               <option value="classic" selected>Classic</option>
@@ -40,26 +43,157 @@
     </div>
   </nav>
 
-  <!-- Main content placeholder -->
+  <!-- Main Content: Certificates Section -->
   <main class="container py-5">
-    {% block content %}
-    {% endblock %}
+    <section class="certificate-section">
+      <h2 class="text-center mb-5">Certificates</h2>
+      <div class="row">
+        <!-- Certificate Card 1 -->
+        <div class="col-md-4 mb-4">
+          <div class="card certificate-card">
+            <!-- Wrap image in an anchor with data attributes for modal -->
+            <a href="#" 
+               class="certificate-link" 
+               data-bs-toggle="modal" 
+               data-bs-target="#certificateModal" 
+               data-image="images/certificate/17-short-specializations-certificate-anthony-ndegwa.png" 
+               data-title="Certificate Software Engineering" 
+               data-description="Issued by African Leadership Experience (ALX).">
+              <img src="images/certificate/17-short-specializations-certificate-anthony-ndegwa.png" class="card-img-top" alt="Certificate 1" />
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">Software Engineering</h5>
+              <p class="card-text">Issued by African Leadership Experience (ALX)</p>
+            </div>
+          </div>
+        </div>
+        <!-- Certificate Card 2 -->
+        <div class="col-md-4 mb-4">
+          <div class="card certificate-card">
+            <a href="#" 
+               class="certificate-link" 
+               data-bs-toggle="modal" 
+               data-bs-target="#certificateModal" 
+               data-image="images/certificate/66-alx-aice-ai-career-essentials-certificate-anthony-ndegwa.png" 
+               data-title="Certificate of Artificial Intelligence" 
+               data-description="Issued by African Leadership Experience (ALX).">
+              <img src="images/certificate/66-alx-aice-ai-career-essentials-certificate-anthony-ndegwa.png" class="card-img-top" alt="Certificate 2" />
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">Certificate of Artificial Intelligence</h5>
+              <p class="card-text">Issued by African Leadership Experience (ALX)</p>
+            </div>
+          </div>
+        </div>
+        <!-- Certificate Card 3 -->
+        <div class="col-md-4 mb-4">
+          <div class="card certificate-card">
+            <a href="#" 
+               class="certificate-link" 
+               data-bs-toggle="modal" 
+               data-bs-target="#certificateModal" 
+               data-image="images/certificate/Critical thinking and problem solving.jpg" 
+               data-title="Certificate of Critical & Analystical Thinking" 
+               data-description="Issued by UDEMY.">
+              <img src="images/certificate/Critical thinking and problem solving.jpg" class="card-img-top" alt="Certificate 3" />
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">Certificate of Critical & Analystical Thinking</h5>
+              <p class="card-text">Issued by Udemy.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Certificate Card 4 -->
+        <div class="col-md-4 mb-4">
+          <div class="card certificate-card">
+            <a href="#" 
+               class="certificate-link" 
+               data-bs-toggle="modal" 
+               data-bs-target="#certificateModal" 
+               data-image="images/certificate/Digital_Marketing.png" 
+               data-title="Certificate of Digital Marketing" 
+               data-description="Issued by ACWICT.">
+              <img src="images/certificate/Digital_Marketing.png" class="card-img-top" alt="Certificate 3" />
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">Certificate of Digital Marketing</h5>
+              <p class="card-text">Issued by ACWICT.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Certificate Card 5 -->
+        <div class="col-md-4 mb-4">
+          <div class="card certificate-card">
+            <a href="#" 
+               class="certificate-link" 
+               data-bs-toggle="modal" 
+               data-bs-target="#certificateModal" 
+               data-image="images/certificate/Depaul_university.png" 
+               data-title="Certificate of Value Center Leadership" 
+               data-description="Issued by Depaul University.">
+              <img src="images/certificate/Depaul_university.png" class="card-img-top" alt="Certificate 3" />
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">Certificate of Value Center Leadership</h5>
+              <p class="card-text">Issued by Depaul University.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
   </main>
+
+  <!-- Certificate Modal -->
+  <div class="modal fade" id="certificateModal" tabindex="-1" aria-labelledby="certificateModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="certificateModalLabel">Certificate Title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="" alt="Certificate Full View" class="img-fluid" />
+          <p class="mt-3 certificate-description"></p>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Footer -->
   <footer class="footer mt-auto py-3 bg-light">
     <div class="container text-center">
-      <span class="text-muted">&copy; 2025 Your Name. All rights reserved.</span>
+      <span class="text-muted">&copy; 2025 Anthony Ndegwa. All rights reserved.</span>
     </div>
   </footer>
 
+  <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Style Switcher Script -->
   <script>
-    // Style Switcher Script
-    const styleSwitcher = document.getElementById('styleSwitcher');
-    const body = document.getElementById('portfolio-body');
-    styleSwitcher.addEventListener('change', (e) => {
+    const styleSwitcher = document.getElementById("styleSwitcher");
+    const body = document.getElementById("portfolio-body");
+    styleSwitcher.addEventListener("change", (e) => {
       body.className = e.target.value;
+    });
+
+    // Update the modal content based on the clicked certificate
+    const certificateModal = document.getElementById('certificateModal');
+    certificateModal.addEventListener('show.bs.modal', function (event) {
+      // Element that triggered the modal
+      const trigger = event.relatedTarget;
+      const imageSrc = trigger.getAttribute('data-image');
+      const title = trigger.getAttribute('data-title');
+      const description = trigger.getAttribute('data-description');
+
+      // Update modal content
+      const modalTitle = certificateModal.querySelector('.modal-title');
+      const modalImg = certificateModal.querySelector('.modal-body img');
+      const modalDesc = certificateModal.querySelector('.certificate-description');
+
+      modalTitle.textContent = title;
+      modalImg.src = imageSrc;
+      modalDesc.textContent = description;
     });
   </script>
 </body>
