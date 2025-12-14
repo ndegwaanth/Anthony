@@ -1,8 +1,6 @@
-/* Basic theme classes */
-/* .classic {
-  background-color: #f8f9fa;
-  color: #212529;
-} */
+/* ===============================
+   Theme styles
+================================ */
 
 .classic {
   background: linear-gradient(135deg, #1d3557, #457b9d);
@@ -19,25 +17,47 @@
   color: #2d3436;
 }
 
-/* Certificate Section Specific Styles */
+/* ===============================
+   Certificate Section
+================================ */
+
 .certificate-section {
   padding: 2rem 0;
 }
 
+/* ===============================
+   Equal-height certificate cards
+================================ */
+
 .certificate-card {
+  height: 100%;
   border: none;
   border-radius: 15px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease;
+
+  /* 🔑 KEY FIX */
+  display: flex;
+  flex-direction: column;
 }
 
 .certificate-card:hover {
   transform: translateY(-5px);
 }
 
+/* Fixed image height */
 .certificate-card .card-img-top {
   width: 100%;
   height: 200px;
   object-fit: cover;
+}
+
+/* Make body fill space */
+.certificate-card .card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
